@@ -21,6 +21,11 @@ const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
 
+// Facebook
+
+const FB = "/auth/facebook";
+const FB_CALLBACK = "/auth/facebook/callback";
+
 // Github
 
 const GITHUB = "/auth/github";
@@ -67,7 +72,9 @@ const routes = {
   },
   gitHub: GITHUB,
   githubCallback: GITHUB_CALLBACK,
-  me: ME
+  me: ME,
+  facebook: FB,
+  facebookCallback: FB_CALLBACK
 };
 
 export default routes;
