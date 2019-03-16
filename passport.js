@@ -27,7 +27,7 @@ passport.use(
     {
       clientID: process.env.FB_ID,
       clientSecret: process.env.FB_SECRET,
-      callbackURL: `https://empty-newt-81.localtunnel.me${
+      callbackURL: `https://wonderful-pig-95.localtunnel.me${
         routes.facebookCallback
       }`,
       profileFields: ["id", "displayName", "photos", "email"],
