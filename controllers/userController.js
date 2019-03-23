@@ -72,6 +72,7 @@ export const facebookLoginCallback = async (_, __, profile, cb) => {
     _json: { id, name, email }
   } = profile;
   try {
+    const user = await User.findOne({ email });
     if (user) {
       user.facebookId = id;
       user.avatarUrl = `https://graph.facebook.com/${id}/picture?type=large`;
