@@ -1,6 +1,6 @@
 const videoContainer = document.getElementById("jsVideoPlayer");
 const videoPlayer = document.querySelector("#jsVideoPlayer video");
-const playBtn = document.getElementById("#jsPlayButton");
+const playBtn = document.getElementById("jsPlayButton");
 
 function handlePlayClick() {
   if (videoPlayer.paused) {
