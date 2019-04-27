@@ -20,8 +20,15 @@ function handlePlayClick() {
 function handleVolumeClick() {
   if (videoPlayer.muted) {
     videoPlayer.muted = false;
-    volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+
     volumeRange.value = videoPlayer.volume;
+    if (volumeRange.value >= 0.6) {
+      volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+    } else if (volumeRange.value >= 0.2) {
+      volumeBtn.innerHTML = '<i class="fas fa-volume-down"></i>';
+    } else {
+      volumeBtn.innerHTML = '<i class="fas fa-volume-off"></i>';
+    }
   } else {
     videoPlayer.muted = true;
     volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';

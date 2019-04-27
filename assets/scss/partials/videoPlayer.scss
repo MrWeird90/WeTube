@@ -26,7 +26,7 @@
     .videoPlayer__column:first-child {
       display: flex;
       align-items: center;
-      span:first-child {
+      #jsVolumeBtn {
         margin-right: 10px;
       }
     }
@@ -57,7 +57,6 @@
         }
       }
     }
-
     .videoPlayer__column:last-child {
       justify-self: end;
     }
